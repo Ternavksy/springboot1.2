@@ -17,7 +17,7 @@ public class ProductManagementApplication {
 	CommandLineRunner runner(ProductService productService) {
 		return args -> {
 			// Генерация 1000 товаров при старте приложения
-			productService.generateAndSaveProducts(100);
+			productService.generateAndSaveProducts(1000);
 		};
 	}
 

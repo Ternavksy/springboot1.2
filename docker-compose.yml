@@ -1,0 +1,14 @@
+services:
+  mongodb:
+    image: mongo
+    container_name: mongo_db
+    ports:
+      - 27017:27017
+    volumes:
+      - mongo:/data
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=larisa
+      - MONGO_INITDB_ROOT_PASSWORD=larisa
+
+volumes:
+  mongo: {}
